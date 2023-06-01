@@ -46,7 +46,7 @@ public class ObjectEx2Bank {
 							System.out.println("예금주: " + accounts[i].owner);
 							System.out.println("예금액: " + accounts[i].balance);
 							break;
-						}else if(accounts[i].accountNo.equals(accounts[accounts.length-1].accountNo)) {
+						}else if(accounts[i].accountNo.equals(accounts[count-1].accountNo)) {
 							System.out.println("일치하는 계좌번호가 없습니다.");
 						}
 					}	
@@ -67,7 +67,7 @@ public class ObjectEx2Bank {
 						accounts[i].balance += money;
 						System.out.println("입금 완료.");
 						break;
-					}else if(accounts[i].accountNo.equals(accounts[accounts.length-1].accountNo)) {
+					}else if(accounts[i].accountNo.equals(accounts[count-1].accountNo)) {
 						System.out.println("일치하는 계좌번호가 없습니다.");
 					}
 				}
@@ -91,7 +91,7 @@ public class ObjectEx2Bank {
 							System.out.println("출금 완료.");
 							break;
 						}
-					}else if(accounts[i].accountNo.equals(accounts[accounts.length-1].accountNo)) {
+					}else if(accounts[i].accountNo.equals(accounts[count-1].accountNo)) {
 						System.out.println("일치하는 계좌번호가 없습니다.");
 					}
 				}
