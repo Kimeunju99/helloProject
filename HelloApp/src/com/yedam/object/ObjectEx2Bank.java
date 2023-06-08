@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class ObjectEx2Bank {
 	public static void main(String[] args) {							//bank 생성자호출
 		Scanner scan = new Scanner(System.in);
-		Bank[] accounts = new Bank[3];
+		Bank2[] accounts = new Bank2[3];
 		boolean run = true;
 		int count = 0; //현재 등록된 사람 수
 		
@@ -36,7 +36,7 @@ public class ObjectEx2Bank {
 						String person = scan.nextLine();
 						System.out.printf("초기금액: ");
 						int money = Integer.parseInt(scan.nextLine());
-						Bank user = new Bank(newacc, person, money); // 새유저 정보
+						Bank2 user = new Bank2(newacc, person, money); // 새유저 정보
 						accounts[count] = user; // 유저 정보 배열에 저장 
 						System.out.println("예금주 생성 완료.");
 						count++; //등록된 사람이 늘었음
